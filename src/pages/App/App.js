@@ -11,7 +11,7 @@ function App() {
     
     //work out what type of screen we are on
     function updateMedia () {
-        setMobile(window.innerWidth < 600);
+        setMobile(window.innerWidth < 641);
     };
 
     //listener to update screen size

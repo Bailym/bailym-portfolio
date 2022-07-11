@@ -2,15 +2,7 @@
 .container-div {
     display: flex;
     flex-direction: row;
-    width:100%;
-}
-
-@media screen and (max-width: 600px) {
-    .container-div {
-        flex-direction: column;
-    }
-
-
+    width: 100%;
 }
 
 /* Contains media, first child of container-div*/
@@ -53,17 +45,46 @@
 #cv-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%
+    width: 75%
+}
+
+#cv-buttons a {
+    flex: 1;
+    margin: 1rem;
 }
 
 #cv-buttons button {
     padding: 1rem;
-    width: 18rem;
+    width: 100%;
     background-color: #11cfc5;
+	border:2px solid #11918b;
+	cursor:pointer;
+	font-weight:bold;
+    color: #fff;
 }
 
 #cv-buttons button:hover {
-    cursor: pointer;
+    background-color:#f56eca;
 }
+#cv-buttons button:active {
+    position:relative;
+	top:1px;
+}
+
+@media screen and (max-width: 600px) {
+    .container-div {
+        flex-direction: column;
+    }
+
+    #cv-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #cv-buttons a {
+        margin: 1rem;
+    }
+
+
+}
+

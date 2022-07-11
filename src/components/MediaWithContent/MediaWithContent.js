@@ -13,8 +13,8 @@ function MediaWithContent() {
                         <li class="socials-item"><a href="/"><img src="/LinkedIn.png" alt="LinkedIn"></img></a></li>
                     </ul>
                     <div id="cv-buttons">
-                        <a href="/"><button id="cv-download-button">Download CV</button></a>
-                        <a href="/"><button id="cv-button-2">Button 2</button></a>
+                        <a href="/"><button>Download CV</button></a>
+                        <a href="/"><button>Button 2</button></a>
                     </div>
                 </div>
             </div>
