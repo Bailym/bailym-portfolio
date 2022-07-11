@@ -4,7 +4,7 @@
     flex-direction: row;
     background-color: #11cfc5;
     background: rgb(17, 207, 197);
-    background: linear-gradient(180deg, rgba(17, 207, 197, 1) 0%, #11918b 100%);
+    background: linear-gradient(180deg, #11cfc5 0%, #11918b 100%);
 }
 
 /* Contains just the logo, child of .nav-div */

@@ -3,6 +3,7 @@ import './App.css';
 import MediaWithText from '../../components/MediaWithContent/MediaWithContent';
 import { useState, useEffect } from "react";
 import MediaWithOverlay from "../../components/MediaWithOverlay/MediaWithOverlay";
+import ProjectTiles from "../../components/ProjectTiles/ProjectTiles";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       {isMobile ? <NavBarResponsive /> : <NavBar />}
       <MediaWithText/>
       <MediaWithOverlay/>
+      <ProjectTiles/>
     </div>
     
   );
