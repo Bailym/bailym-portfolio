@@ -1,6 +1,5 @@
 /* Contains the entire nav bar (logo + items) */
 .nav-div {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: row;
     background-color: #11cfc5;

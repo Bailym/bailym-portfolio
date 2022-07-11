@@ -1,0 +1,69 @@
+/* Contains media and text divs */
+.container-div {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+
+@media screen and (max-width: 600px) {
+    .container-div {
+        flex-direction: column;
+    }
+
+
+}
+
+/* Contains media, first child of container-div*/
+.media-div {
+    flex: 1;
+}
+
+/* Contains text, second child of container-div*/
+.content-div {
+    flex: 1;
+}
+
+.media-img {
+    width: 100%
+}
+
+.socials-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.socials-list {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.socials-item {
+    display: inline;
+}
+
+.socials-item a img {
+    max-width: 5rem;
+}
+
+#cv-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%
+}
+
+#cv-buttons button {
+    padding: 1rem;
+    width: 18rem;
+    background-color: #11cfc5;
+}
+
+#cv-buttons button:hover {
+    cursor: pointer;
+}

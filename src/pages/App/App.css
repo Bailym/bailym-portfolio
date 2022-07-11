@@ -1,8 +1,7 @@
-{
-    .container-div {
-        width: 100%;
-        background-color: #fff;   
-    }
-
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.app-container-div {
+    background-color: #fff;
+}
