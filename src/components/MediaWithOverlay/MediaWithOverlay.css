@@ -1,0 +1,27 @@
+.media-container {
+    background-image: url("/public/Dragonite.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid red;
+    display:flex;
+    flex-direction: row;
+    height:50rem;
+    margin: 5rem auto;
+}
+
+.avatar-div {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.overlay-content-div {
+    flex: 2;
+    border: 1px solid blue;
+    justify-content: center;
+    align-items: center;
+}

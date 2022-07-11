@@ -2,6 +2,7 @@ import { NavBarResponsive, NavBar } from "../../components/NavBar/NavBar";
 import './App.css';
 import MediaWithText from '../../components/MediaWithContent/MediaWithContent';
 import { useState, useEffect } from "react";
+import MediaWithOverlay from "../../components/MediaWithOverlay/MediaWithOverlay";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
     <div class="app-container-div">
       {isMobile ? <NavBarResponsive /> : <NavBar />}
       <MediaWithText/>
+      <MediaWithOverlay/>
     </div>
     
   );
