@@ -5,7 +5,6 @@
     background-color: #11cfc5;
     background: rgb(17, 207, 197);
     background: linear-gradient(180deg, rgba(17, 207, 197, 1) 0%, rgba(17, 145, 138, 1) 100%);
-
 }
 
 /* Contains just the logo, child of .nav-div */
@@ -25,7 +24,6 @@
     flex: 10;
     justify-content: flex-end;
     margin: 0 1rem 0 0;
-
 }
 
 /* An li within .nav-items */
@@ -43,6 +41,10 @@
 
 .nav-item a:hover {
     color: #f56eca;
+}
+
+#hamburger {
+    display: none;
 }
 
 /* link underline animation */
@@ -67,4 +69,87 @@
         right: auto;
         width: 100%;
     }
+}
+
+/* Styling for mobile nav bar when closed */
+.nav-div-responsive-closed {
+    display: flex;
+    flex-direction: row;
+    background-color: #11cfc5;
+    background: rgb(17, 207, 197);
+    background: linear-gradient(180deg, rgba(17, 207, 197, 1) 0%, rgba(17, 145, 138, 1) 100%);
+}
+
+.nav-logo-div-closed {
+    flex: 1;
+}
+
+.nav-hamburger-responsive-closed {
+    justify-content: flex-end;
+    margin: 0 1rem 0 0;
+}
+
+.nav-hamburger-responsive-closed img {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+/* Styling for mobile nav bar when open */
+
+.nav-div-responsive-open {
+    display: flex;
+    flex-direction: column;
+    background-color: #11cfc5;
+    background: rgb(17, 207, 197);
+    background: linear-gradient(180deg, rgba(17, 207, 197, 1) 0%, rgba(17, 145, 138, 1) 100%);
+}
+
+.nav-top-bar-responsive-open {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-logo-div-open {
+    flex: 1;
+}
+
+.nav-hamburger-responsive-open {
+    justify-content: flex-end;
+    margin: 0 1rem 0 0;
+}
+
+.nav-hamburger-responsive-open img {
+    width: 4rem;
+    height: 4rem;
+
+}
+
+.nav-items-responsive-open {
+    display: flex;
+    flex: 10;
+    justify-content: center;
+    width:100%
+}
+
+.nav-items-list-responsive-open {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item-responsive-open {
+    padding: 1rem 0;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-item-responsive-open a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-item-responsive-open a:hover {
+    color: #f56eca;
 }

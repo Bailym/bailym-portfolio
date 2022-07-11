@@ -1,7 +1,4 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.app-container-div {
-    background-color: #fff;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
