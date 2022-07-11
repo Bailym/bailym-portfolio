@@ -1,0 +1,71 @@
+/* Contains the entire nav bar (logo + items) */
+.nav-div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-color: #11cfc5;
+    background: rgb(17, 207, 197);
+    background: linear-gradient(180deg, rgba(17, 207, 197, 1) 0%, rgba(17, 145, 138, 1) 100%);
+
+}
+
+/* Contains just the logo, child of .nav-div */
+.nav-logo-div {
+    flex: 1;
+}
+
+/* The actual logo img child of .nav-logo-div */
+.nav-logo {
+    padding: 1rem;
+    width: 2rem;
+}
+
+/* A div containing a list of items, second column in flex box, child of nav-div. */
+.nav-items {
+    display: flex;
+    flex: 10;
+    justify-content: flex-end;
+    margin: 0 1rem 0 0;
+
+}
+
+/* An li within .nav-items */
+.nav-item {
+    display: inline;
+    padding: 1rem;
+}
+
+/* Links in the nav-item */
+.nav-item a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #f56eca;
+}
+
+/* link underline animation */
+.underline {
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f56eca;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
