@@ -1,17 +1,18 @@
+/*parent div for component, contains avatar-div and overlay-content-div */
+
 .media-container {
     background-image: url("/public/Dragonite.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid red;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    height:50rem;
-    margin: 5rem auto;
+    padding: 10rem;
+    margin: 2.5rem auto;
 }
 
+/* child of media-container, contains left side elements */
 .avatar-div {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,9 +20,70 @@
     flex: 1;
 }
 
+/* The header above the avatar */
+.avatar-div h2 {
+    color: #fff;
+    text-align: center;
+}
+
+/* The avatar img */
+.avatar {
+    border: 1px solid yellow;
+    width: 75%;
+    border-radius: 50px;
+}
+
+/* description p under thr avatar */
+#avatar-description {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+/* Right column */
 .overlay-content-div {
     flex: 2;
-    border: 1px solid blue;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* short paragraph on the right side */
+#about-text {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 640px) {
+    .media-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .overlay-content-div {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .avatar-div {
+        flex: 1;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .avatar {
+        width: 100%;
+    }
+
+    #about-text {
+        font-size: 1.5rem;
+
+    }
 }
