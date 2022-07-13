@@ -1,14 +1,19 @@
 import "./MediaWithOverlay.css";
+import { motion, useAnimation } from "framer-motion";
+import {useInView} from "react-intersection-observer";
+import { useEffect } from "react";
+import { duration } from "@mui/material";
 
 function MediaWithOverlay() {
+
     return (
-        <div className="media-container">
+        <motion.div className="media-container">
             <div className="avatar-div">
                 <h2>About</h2>
                 <img className="avatar" src="/Retrowave.jpg" alt="avatar" />
                 <p id="avatar-description">Baily Martin</p>
             </div>
-            <div className="overlay-content-div">
+            <motion.div className="overlay-content-div" initial={{x:"-90vw"}} whileInView={{x:0}} transition={{type:"spring", duration:2, bounce:0.3}}>
                 <p id='about-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                     numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
@@ -30,8 +35,8 @@ function MediaWithOverlay() {
                     modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam
                     totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam
                     quasi aliquam eligendi, placeat qui corporis!</p>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     )
 }
 
