@@ -61,7 +61,7 @@
 
 /* Mobile */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1430px) {
     .media-container {
         flex-direction: column;
         padding: 1rem;
@@ -79,7 +79,7 @@
     }
 
     .avatar {
-        width: 100%;
+        width: 75%;
     }
 
     #about-text {

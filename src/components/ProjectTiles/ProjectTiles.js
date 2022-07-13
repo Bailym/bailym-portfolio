@@ -20,19 +20,24 @@ function ProjectTiles() {
                     </div>
                 </div>
                 <div className="tile" id="tile-2">
-                    <div className="tile-content">
-                        <h2>Project 2</h2>
+                <div className="tile-content">
+                        <h2>Binary Bingo</h2>
+                        <img src="/Pac Man.jpg" alt="pacman"></img>
                     </div>
                     <div className='tile-footer'>
+                        <a href = "/"><button>View on Github</button></a>
+                        <a href = "/"><button>View Live</button></a>
 
                     </div>
                 </div>
                 <div className="tile" id="tile-3">
-                    <div className="tile-content">
-                        <h2>Project 3</h2>
+                <div className="tile-content">
+                        <h2>Binary Bingo</h2>
+                        <img src="/Pac Man.jpg" alt="pacman"></img>
                     </div>
                     <div className='tile-footer'>
-
+                        <a href = "/"><button>View on Github</button></a>
+                        <a href = "/"><button>View Live</button></a>
                     </div>
                 </div>
             </div>
