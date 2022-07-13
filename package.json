@@ -1,7 +1,7 @@
 {
   "name": "bailym-portfolio",
   "version": "0.1.0",
-  "homepgae": "https://bailym.github.io/",
+  "homepage": "https://bailym.github.io/bailym-portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
@@ -12,7 +12,6 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^6.5.0",
-    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.3.5",
@@ -44,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
