@@ -1,7 +1,7 @@
 {
   "name": "bailym-portfolio",
   "version": "0.1.0",
-  "homepgae": "https://github.com/Bailym/bailym.github.io",
+  "homepgae": "https://github.com/Bailym/bailym.portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
