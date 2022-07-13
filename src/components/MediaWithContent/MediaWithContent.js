@@ -2,15 +2,16 @@ import "./MediaWithContent.css";
 
 function MediaWithContent() {
     return(
-        <div class="container-div">
-            <div class="media-div">
-                <img class="media-img" src="/Retrowave.jpg" alt="home-img" />
+        <div className="container-div">
+            <div className="media-div">
+                <img className="media-img" src="/Retrowave.jpg" alt="home-img" />
             </div>
-            <div class="content-div">
-                <div class="socials-div">
-                    <ul class ="socials-list">
-                        <li class="socials-item"><a href="/"><img src="/Github.png" alt="github"></img></a></li>
-                        <li class="socials-item"><a href="/"><img src="/LinkedIn.png" alt="LinkedIn"></img></a></li>
+            <div className="content-div">
+                <div className="socials-div">
+                    <ul className ="socials-list">
+                        <li className="socials-item"><a href="/"><img src="/Github.png" alt="github" id="github-img"></img></a></li>
+                        <li className="socials-item"><a href="/"><img src="/LinkedIn.png" alt="linkedin" id="linkedin-img"></img></a></li>
+                        <li className="socials-item"><a href="/"><img src="/Instagram.png" alt="instagram" id="instagram-img"></img></a></li>
                     </ul>
                     <div id="cv-buttons">
                         <a href="/"><button>Download CV</button></a>
