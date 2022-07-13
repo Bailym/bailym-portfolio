@@ -26,6 +26,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    flex-wrap: nowrap;
 }
 
 .socials-list {
@@ -41,7 +42,7 @@
 }
 
 .socials-item a img {
-    max-width: 15rem;
+    max-width: 12vw;
     filter: invert(72%) sepia(36%) saturate(4681%) hue-rotate(285deg) brightness(100%) contrast(93%);
 }
 
@@ -74,7 +75,7 @@
 	top:1px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 960px) {
     .container-div {
         flex-direction: column;
     }
@@ -88,6 +89,13 @@
         margin: 1rem;
     }
 
+    .content-div {
+        margin-top: 2.5rem;
+    }
 
+    .socials-item a img {
+        max-width: 25vw;
+        filter: invert(72%) sepia(36%) saturate(4681%) hue-rotate(285deg) brightness(100%) contrast(93%);
+    }
 }
 
