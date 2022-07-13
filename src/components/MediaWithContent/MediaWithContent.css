@@ -44,7 +44,6 @@
 
 .socials-item a img {
     max-width: 12vw;
-    filter: invert(72%) sepia(36%) saturate(4681%) hue-rotate(285deg) brightness(100%) contrast(93%);
 }
 
 #cv-buttons {
@@ -61,8 +60,8 @@
 #cv-buttons button {
     padding: 1rem;
     width: 100%;
-    background-color: #11cfc5;
-	border:2px solid #11918b;
+    background-color: #900137;
+	border:2px solid #0b535e;
 	cursor:pointer;
 	font-weight:bold;
     color: #fff;
@@ -71,7 +70,7 @@
 }
 
 #cv-buttons button:hover {
-    background-color:#f56eca;
+    background-color:#426296;
 }
 #cv-buttons button:active {
     position:relative;

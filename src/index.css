@@ -4,6 +4,8 @@
 body {
   font-family: "Brandon Grotesque";
   margin: 0;
+  background: rgb(235,192,235);
+  background: radial-gradient(circle, rgba(235,192,235,1) 0%, rgba(237,228,237,1) 100%);
 }
 
 code {
