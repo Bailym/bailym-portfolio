@@ -1,7 +1,7 @@
 /*parent div for component, contains avatar-div and overlay-content-div */
 
 .media-container {
-    background-image: url("/public/Dragonite.png");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("/public/Arcade.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,17 @@
     font-size: 1.5rem;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 0 1rem;
+    font-family: "OpenSans";
+    text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
 }
 
 /* Mobile */

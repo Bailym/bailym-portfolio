@@ -10,35 +10,35 @@ function ProjectTiles() {
             <div className="tiles-container">
                 <motion.div className="tile" id="tile-1" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
-                        <h2>Binary Bingo</h2>
-                        <img src="/Pac Man.jpg" alt="pacman"></img>
+                        <h2>Binary Bingo (React.js)</h2>
+                        <img src="https://github.com/Bailym/BinaryBingo/blob/main/images/BinaryBingo%202.png?raw=true" alt="Binary Bingo"></img>
 
                     </div>
                     <div className='tile-footer'>
-                        <a href="/"><button>View on Github</button></a>
-                        <a href="/"><button>View Live</button></a>
+                        <a href="/" target="_blank" rel="noreferrer"><button>View on Github</button></a>
+                        <a href="/" target="_blank" rel="noreferrer"><button>View Live</button></a>
 
                     </div>
                 </motion.div>
                 <motion.div className="tile" id="tile-2" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
-                        <h2>Binary Bingo</h2>
-                        <img src="/Pac Man.jpg" alt="pacman"></img>
+                        <h2>GalaxyRun (Unity 2D)</h2>
+                        <img src="https://github.com/Bailym/GalaxyRun/blob/main/images/Gameplay.gif?raw=true" alt="GalxyRun"></img>
                     </div>
                     <div className='tile-footer'>
-                        <a href="/"><button>View on Github</button></a>
-                        <a href="/"><button>View Live</button></a>
+                        <a href="https://github.com/Bailym/GalaxyRun" target="_blank" rel="noreferrer"><button>View on Github</button></a>
+                        <a href="https://github.com/Bailym/GalaxyRun/releases/download/v0.0.1/GalaxyRun.13-07-22.zip" target="_blank" rel="noreferrer"><button>Download</button></a>
 
                     </div>
                 </motion.div>
                 <motion.div className="tile" id="tile-3" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
-                        <h2>Binary Bingo</h2>
-                        <img src="/Pac Man.jpg" alt="pacman"></img>
+                        <h2>TCG-DB (React.js + Node.js + MySQL</h2>
+                        <img src="https://github.com/Bailym/TCG-DB/blob/main/images/Base%20.png?raw=true" alt="tcg-db"></img>
                     </div>
                     <div className='tile-footer'>
-                        <a href="/"><button>View on Github</button></a>
-                        <a href="/"><button>View Live</button></a>
+                        <a href="https://github.com/Bailym/TCG-DB" target="_blank" rel="noreferrer"><button>View on Github</button></a>
+                        <a href="https://bailym-tcgdb.herokuapp.com/" target="_blank" rel="noreferrer"><button>View Live</button></a>
                     </div>
                 </motion.div>
             </div>
