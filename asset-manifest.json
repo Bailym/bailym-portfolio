@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bailym-portfolio/static/css/main.06551118.css",
-    "main.js": "/bailym-portfolio/static/js/main.b5d8ee7a.js",
-    "static/media/OpenSans.ttf": "/bailym-portfolio/static/media/OpenSans.9c7806d7ef7d294f568e.ttf",
-    "static/media/Arcade.jpg": "/bailym-portfolio/static/media/Arcade.738a982a013c21f2ebc8.jpg",
-    "static/media/BrandonGrotesque.otf": "/bailym-portfolio/static/media/BrandonGrotesque.9ad36c335e917b52911d.otf",
-    "index.html": "/bailym-portfolio/index.html",
-    "main.06551118.css.map": "/bailym-portfolio/static/css/main.06551118.css.map",
-    "main.b5d8ee7a.js.map": "/bailym-portfolio/static/js/main.b5d8ee7a.js.map"
+    "main.css": "/static/css/main.f2976613.css",
+    "main.js": "/static/js/main.b5d8ee7a.js",
+    "static/media/OpenSans.ttf": "/static/media/OpenSans.9c7806d7ef7d294f568e.ttf",
+    "static/media/Arcade.jpg": "/static/media/Arcade.738a982a013c21f2ebc8.jpg",
+    "static/media/BrandonGrotesque.otf": "/static/media/BrandonGrotesque.9ad36c335e917b52911d.otf",
+    "index.html": "/index.html",
+    "main.f2976613.css.map": "/static/css/main.f2976613.css.map",
+    "main.b5d8ee7a.js.map": "/static/js/main.b5d8ee7a.js.map"
   },
   "entrypoints": [
-    "static/css/main.06551118.css",
+    "static/css/main.f2976613.css",
     "static/js/main.b5d8ee7a.js"
   ]
 }
