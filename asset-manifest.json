@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/bailym-portfolio/static/css/main.0c1715fa.css",
-    "main.js": "/bailym-portfolio/static/js/main.3d4b9e9a.js",
+    "main.css": "/bailym-portfolio/static/css/main.defedea7.css",
+    "main.js": "/bailym-portfolio/static/js/main.8fde2c16.js",
+    "static/media/Commodore.jpg": "/bailym-portfolio/static/media/Commodore.78ae783fcf02c764ca94.jpg",
     "static/media/OpenSans.ttf": "/bailym-portfolio/static/media/OpenSans.9c7806d7ef7d294f568e.ttf",
     "static/media/Arcade.jpg": "/bailym-portfolio/static/media/Arcade.738a982a013c21f2ebc8.jpg",
     "static/media/BrandonGrotesque.otf": "/bailym-portfolio/static/media/BrandonGrotesque.9ad36c335e917b52911d.otf",
     "index.html": "/bailym-portfolio/index.html",
-    "main.0c1715fa.css.map": "/bailym-portfolio/static/css/main.0c1715fa.css.map",
-    "main.3d4b9e9a.js.map": "/bailym-portfolio/static/js/main.3d4b9e9a.js.map"
+    "main.defedea7.css.map": "/bailym-portfolio/static/css/main.defedea7.css.map",
+    "main.8fde2c16.js.map": "/bailym-portfolio/static/js/main.8fde2c16.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c1715fa.css",
-    "static/js/main.3d4b9e9a.js"
+    "static/css/main.defedea7.css",
+    "static/js/main.8fde2c16.js"
   ]
 }
