@@ -8,8 +8,8 @@ import ProjectTiles from "../../components/ProjectTiles/ProjectTiles";
 function App() {
 
   const [isMobile, setMobile] = useState(window.innerWidth < 641);
-  const [isTablet, setTablet] = useState(window.innerWidth < 1007 && window.innerWidth > 640);
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1006);
+  //const [isTablet, setTablet] = useState(window.innerWidth < 1007 && window.innerWidth > 640);
+  //const [isDesktop, setDesktop] = useState(window.innerWidth > 1006);
     
     //work out what type of screen we are on
     function updateMedia () {
@@ -24,7 +24,7 @@ function App() {
 
 
   return (
-    <div class="app-container-div">
+    <div className="app-container-div">
       {isMobile ? <NavBarResponsive /> : <NavBar />}
       <MediaWithText/>
       <MediaWithOverlay/>
