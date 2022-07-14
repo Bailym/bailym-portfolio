@@ -1,21 +1,35 @@
 import "./MediaWithContent.css";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
 function MediaWithContent() {
+
+    const controls = useAnimation();
+
+    //runs when the component loads. i specifies the delay before the animation starts so items futher down the list will start later. to remove delay just set them all to 1.
+    useEffect(() => {
+        controls.start((i) => ({
+          x: [0,10,0],
+          color: ["#fff","#900137","#fff"],
+          transition: { delay: i * 0.3, duration: 0.5, ease: "easeInOut" }
+        }));
+      }, [controls]);
+
     return (
         <div className="container-div">
-            <motion.div className="media-div" animate={{ x: ["-100vw", "0vw"] }}>
-                <div className="title-div">
-                    <h1>Baily Martin</h1>
-                    <h2>React.js</h2>
-                    <h2>Antd - MUI - Bootstrap</h2>
-                    <h2>Node.js</h2>
-                    <h2>Express.js</h2>
-                    <h2>AWS EC2</h2>
-                    <h2>MySQL</h2>
-                    <h2>Unity</h2>
-                    <h2>UI/UX Design</h2>
-                </div>
+            <motion.div className="media-div">
+                <motion.div className="title-div">
+                    <motion.h1>Baily Martin</motion.h1>
+                    <motion.h2 custom={0} animate={controls}>React.js</motion.h2>
+                    <motion.h2 custom={1} animate={controls}>Antd - MUI - Bootstrap</motion.h2>
+                    <motion.h2 custom={2} animate={controls}>Node.js</motion.h2>
+                    <motion.h2 custom={3} animate={controls}>Express.js</motion.h2>
+                    <motion.h2 custom={4} animate={controls}>AWS EC2</motion.h2>
+                    <motion.h2 custom={5} animate={controls}>MySQL</motion.h2>
+                    <motion.h2 custom={6} animate={controls}>Unity</motion.h2>
+                    <motion.h2 custom={7} animate={controls}>UI/UX Design</motion.h2>
+                    <motion.h2 custom={8} animate={controls}>WordPress CMS</motion.h2>
+                </motion.div>
             </motion.div>
                 <motion.div className="content-div" animate={{ x: ["100vw", "0vw"] }}>
                     <div className="socials-div">
