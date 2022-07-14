@@ -5,7 +5,7 @@ function MediaWithContent() {
     return(
         <div className="container-div">
             <motion.div className="media-div" animate={{x: ["-100vw","0vw"]}}>
-                <img className="media-img" src="/Commodore.jpg" alt="home-img" />
+                <img className="media-img" src={process.env.PUBLIC_URL + "/Commodore.jpg"} alt="home-img" />
             </motion.div>
             <motion.div className="content-div" animate={{x: ["100vw","0vw"]}}>
                 <div className="socials-div">
