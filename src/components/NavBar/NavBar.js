@@ -5,7 +5,7 @@ export function NavBar() {
     return (
         <div className="nav-div">
             <div className="nav-logo-div">
-                <a href="/"><img className="nav-logo" src={process.env.PUBLIC_URL + "/NavLogo.png"} alt="Logo" /></a>
+                <a href="/"><img className="nav-logo" src={process.env.PUBLIC_URL + "/Joystick.png"} alt="Logo" /></a>
             </div>
             <div className="nav-items">
                 <ul className="nav-items-list">
@@ -32,7 +32,7 @@ export function NavBarResponsive() {
             <div className="nav-div-responsive-open">
                 <div className="nav-top-bar-responsive-open">
                     <div className="nav-logo-div-open">
-                        <a href="/"><img className="nav-logo" src={process.env.PUBLIC_URL + "/NavLogo.png"} alt="Logo" /></a>
+                        <a href="/"><img className="nav-logo" src={process.env.PUBLIC_URL + "/Joystick.png"} alt="Logo" /></a>
                     </div>
                     <div className="nav-hamburger-responsive-open">
                         <img src={process.env.PUBLIC_URL + "/Hamburger.png"} alt="hamburger" onClick={() => toggleMenu()}></img>
@@ -52,7 +52,7 @@ export function NavBarResponsive() {
         return (
             <div className="nav-div-responsive-closed">
                 <div className="nav-logo-div-closed">
-                    <a href="/"><img className={process.env.PUBLIC_URL + "nav-logo"} src="/NavLogo.png" alt="Logo" /></a>
+                    <a href="/"><img className="nav-logo" src={process.env.PUBLIC_URL + "/Joystick.png"} alt="Logo" /></a>
                 </div>
                 <div className="nav-hamburger-responsive-closed">
                     <img src={process.env.PUBLIC_URL + "/Hamburger.png"} alt="hamburger" onClick={() => toggleMenu()}></img>
