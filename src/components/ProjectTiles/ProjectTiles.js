@@ -33,7 +33,7 @@ function ProjectTiles() {
                 </motion.div>
                 <motion.div className="tile" id="tile-3" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
-                        <h2>TCG-DB (React.js + Node.js + MySQL</h2>
+                        <h2>TCG-DB (React.js + Node.js + MySQL)</h2>
                         <img src="https://github.com/Bailym/TCG-DB/blob/main/images/Base%20.png?raw=true" alt="tcg-db"></img>
                     </div>
                     <div className='tile-footer'>

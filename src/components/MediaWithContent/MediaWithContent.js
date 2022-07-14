@@ -15,7 +15,7 @@ function MediaWithContent() {
                         <li className="socials-item"><a href="https://www.instagram.com/bailym18/" target="_blank" rel="noreferrer"><motion.img src={process.env.PUBLIC_URL + "/Instagram.png"} alt="instagram" id="instagram-img" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}/></a></li>
                     </ul>
                     <div id="cv-buttons">
-                        <a href="/CV.pdf" target="_blank" rel="noreferrer"><motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Download CV</motion.button></a>
+                        <a href={process.env.PUBLIC_URL + "/CV.pdf"} target="_blank" rel="noreferrer"><motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Download CV</motion.button></a>
                         <a href="mailto:BM39@hotmail.co.uk"><motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Email Me</motion.button></a>
                     </div>
                 </div>
