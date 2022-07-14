@@ -9,9 +9,9 @@ export function NavBar() {
             </div>
             <div className="nav-items">
                 <ul className="nav-items-list">
-                    <li className="nav-item"><a href={process.env.PUBLIC_URL} className="underline">Item 1</a></li>
+                    {/* <li className="nav-item"><a href={process.env.PUBLIC_URL} className="underline">Item 1</a></li>
                     <li className="nav-item"><a href={process.env.PUBLIC_URL} className="underline">Item 2</a></li>
-                    <li className="nav-item"><a href={process.env.PUBLIC_URL} className="underline">Item 3</a></li>
+                    <li className="nav-item"><a href={process.env.PUBLIC_URL} className="underline">Item 3</a></li> */}
                 </ul>
             </div>
         </div>
@@ -40,9 +40,9 @@ export function NavBarResponsive() {
                 </div>
                 <div className="nav-items-responsive-open">
                     <ul className="nav-items-list-responsive-open">
-                        <li className="nav-item-responsive-open"><a href={process.env.PUBLIC_URL} className="underline">Item 1</a></li>
+                        {/* <li className="nav-item-responsive-open"><a href={process.env.PUBLIC_URL} className="underline">Item 1</a></li>
                         <li className="nav-item-responsive-open"><a href={process.env.PUBLIC_URL} className="underline">Item 2</a></li>
-                        <li className="nav-item-responsive-open"><a href={process.env.PUBLIC_URL} className="underline">Item 3</a></li>
+                        <li className="nav-item-responsive-open"><a href={process.env.PUBLIC_URL} className="underline">Item 3</a></li */}>
                     </ul>
                 </div>
             </div>
