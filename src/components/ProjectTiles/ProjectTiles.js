@@ -11,12 +11,12 @@ function ProjectTiles() {
                 <motion.div className="tile" id="tile-1" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
                         <h2>Binary Bingo (React.js)</h2>
-                        <img src="https://github.com/Bailym/BinaryBingo/blob/main/images/BinaryBingo%202.png?raw=true" alt="Binary Bingo"></img>
+                        <img src="https://github.com/Bailym/BinaryBingo/raw/main/images/BinaryBingo%205.png" alt="Binary Bingo"></img>
 
                     </div>
                     <div className='tile-footer'>
-                        <a href="/" target="_blank" rel="noreferrer"><button>View on Github</button></a>
-                        <a href="/" target="_blank" rel="noreferrer"><button>View Live</button></a>
+                        <a href="https://github.com/Bailym/BinaryBingo/" target="_blank" rel="noreferrer"><button>View on Github</button></a>
+                        <a href="https://bailym.github.io/BinaryBingo/" target="_blank" rel="noreferrer"><button>View Live</button></a>
 
                     </div>
                 </motion.div>
