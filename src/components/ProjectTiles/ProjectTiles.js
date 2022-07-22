@@ -41,6 +41,15 @@ function ProjectTiles() {
                         <a href="https://bailym-tcgdb.herokuapp.com/" target="_blank" rel="noreferrer"><button>View Live</button></a>
                     </div>
                 </motion.div>
+                <motion.div className="tile" id="tile-4" whileHover={{ scale: 1.05 }}>
+                    <div className="tile-content">
+                        <h2>Extra Armor (Java + Minecraft Forge API)</h2>
+                        <img src="https://i.imgur.com/N003tfh.gif" alt="tcg-db"></img>
+                    </div>
+                    <div className='tile-footer'>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/extra-armor" target="_blank" rel="noreferrer"><button>View on CurseForge</button></a>
+                    </div>
+                </motion.div>
             </div>
         </>
     )
