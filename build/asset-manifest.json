@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.550a3328.css",
-    "main.js": "/static/js/main.c90eaa5b.js",
+    "main.css": "/static/css/main.58ab2a1f.css",
+    "main.js": "/static/js/main.d2701c64.js",
     "static/media/Commodore.jpg": "/static/media/Commodore.78ae783fcf02c764ca94.jpg",
     "static/media/OpenSans.ttf": "/static/media/OpenSans.9c7806d7ef7d294f568e.ttf",
     "static/media/Arcade.jpg": "/static/media/Arcade.738a982a013c21f2ebc8.jpg",
     "static/media/BrandonGrotesque.otf": "/static/media/BrandonGrotesque.9ad36c335e917b52911d.otf",
     "index.html": "/index.html",
-    "main.550a3328.css.map": "/static/css/main.550a3328.css.map",
-    "main.c90eaa5b.js.map": "/static/js/main.c90eaa5b.js.map"
+    "main.58ab2a1f.css.map": "/static/css/main.58ab2a1f.css.map",
+    "main.d2701c64.js.map": "/static/js/main.d2701c64.js.map"
   },
   "entrypoints": [
-    "static/css/main.550a3328.css",
-    "static/js/main.c90eaa5b.js"
+    "static/css/main.58ab2a1f.css",
+    "static/js/main.d2701c64.js"
   ]
 }
