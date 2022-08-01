@@ -1,3 +1,7 @@
+#tiles-component{
+    width: 100%;
+}
+
 .tiles-title {
     margin: auto;
     text-align: center;
@@ -8,21 +12,19 @@
     flex-direction: row;
     margin: 2.5rem auto;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
 .tile {
     display: flex;
-    flex: 1;
-    padding: 1rem;
+    width:30%;
+    padding: 1rem auto;
     flex-direction: column;
-    margin: 0 2rem;
-    border-radius: 10px;
+    margin: 1rem auto ;
     background: rgba(42, 53, 81, 0.3);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(42, 53, 81, 0.3);
 }
 
@@ -52,7 +54,7 @@
 .tile-footer {
     display: flex;
     flex: 1;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
@@ -66,14 +68,12 @@
 }
 
 .tile-footer a {
-    align-content: center;
     width: 100%;
     margin: 0.5rem 0;
 }
 
 .tile-footer button {
     padding: 1rem;
-    width: 10rem;
     background-color: #900137;
     cursor: pointer;
     font-weight: bold;
@@ -97,6 +97,6 @@
     }
 
     .tile {
-        margin: 1rem 2rem;
+        width:clamp(1rem, 90%, 50rem)   
     }
 }
