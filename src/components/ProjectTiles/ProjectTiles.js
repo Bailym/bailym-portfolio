@@ -27,7 +27,7 @@ function ProjectTiles() {
                     </div>
                     <div className='tile-footer'>
                         <a href="https://github.com/Bailym/GalaxyRun" target="_blank" rel="noreferrer"><button>View on Github</button></a>
-                        <a href="https://github.com/Bailym/GalaxyRun/releases/download/v0.0.1/GalaxyRun.13-07-22.zip" target="_blank" rel="noreferrer"><button>Download</button></a>
+                        <a href="https://github.com/Bailym/GalaxyRun/releases/download/v0.0.2/GalaxyRun.01-08-22.zip" target="_blank" rel="noreferrer"><button>Download</button></a>
 
                     </div>
                 </motion.div>
