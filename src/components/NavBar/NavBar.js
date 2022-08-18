@@ -35,7 +35,7 @@ export function NavBarResponsive() {
                         <a href={process.env.PUBLIC_URL}><img className="nav-logo" src={process.env.PUBLIC_URL + "/Joystick.png"} alt="Logo" /></a>
                     </div>
                     <div className="nav-hamburger-responsive-open">
-                        <img src={process.env.PUBLIC_URL + "/Hamburger.png"} alt="hamburger" onClick={() => toggleMenu()}></img>
+                        {/* <img src={process.env.PUBLIC_URL + "/Hamburger.png"} alt="hamburger" onClick={() => toggleMenu()}></img> */}
                     </div>
                 </div>
                 <div className="nav-items-responsive-open">
@@ -55,7 +55,7 @@ export function NavBarResponsive() {
                     <a href={process.env.PUBLIC_URL}><img className="nav-logo" src={process.env.PUBLIC_URL + "/Joystick.png"} alt="Logo" /></a>
                 </div>
                 <div className="nav-hamburger-responsive-closed">
-                    <img src={process.env.PUBLIC_URL + "/Hamburger.png"} alt="hamburger" onClick={() => toggleMenu()}></img>
+                    {/* <img src={process.env.PUBLIC_URL + "/Hamburger.png"} alt="hamburger" onClick={() => toggleMenu()}></img> */}
                 </div>
             </div>
         )

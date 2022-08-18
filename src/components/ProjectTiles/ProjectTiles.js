@@ -39,6 +39,15 @@ function ProjectTiles() {
                         <a href="https://www.curseforge.com/minecraft/mc-mods/extra-armor" target="_blank" rel="noreferrer"><button>View on CurseForge</button></a>
                     </div>
                 </motion.div>
+                <motion.div className="tile" id="tile-6" whileHover={{ scale: 1.05 }}>
+                    <div className="tile-content">
+                        <h2>FetchDecode.com (WordPress)</h2>
+                        <img src={process.env.PUBLIC_URL + "/fetchdecode.png"} alt="fetchdecode.com"></img>
+                    </div>
+                    <div className='tile-footer'>
+                        <a href="https://fetchdecode.com" target="_blank" rel="noreferrer"><button>View Live</button></a>
+                    </div>
+                </motion.div>
                 <motion.div className="tile" id="tile-2" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
                         <h2>GalaxyRun (Unity 2D)</h2>
