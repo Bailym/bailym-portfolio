@@ -61,12 +61,12 @@ function ProjectTiles() {
                 </motion.div>
                 <motion.div className="tile" id="tile-3" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
-                        <h2>TCG-DB (React.js + Node.js + MySQL)</h2>
+                        <h2>TCG-DB (React.js)</h2>
                         <img src="https://github.com/Bailym/TCG-DB/blob/main/images/Base%20.png?raw=true" alt="tcg-db"></img>
                     </div>
                     <div className='tile-footer'>
                         <a href="https://github.com/Bailym/TCG-DB" target="_blank" rel="noreferrer"><button>View on Github</button></a>
-                        <a href="https://bailym-tcgdb.herokuapp.com/" target="_blank" rel="noreferrer"><button>View Live</button></a>
+                        <a href="https://bailym.github.io/TCG-DB/" target="_blank" rel="noreferrer"><button>View Live</button></a>
                     </div>
                 </motion.div>
             </div>
