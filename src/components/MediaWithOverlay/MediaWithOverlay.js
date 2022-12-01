@@ -10,7 +10,7 @@ function MediaWithOverlay() {
         <motion.div className="media-container">
             <div className="avatar-div">
                 <h2>About</h2>
-                <img className="avatar" src={process.env.PUBLIC_URL + "/Main.png"} alt="avatar" />
+                <img className="avatar" src={process.env.PUBLIC_URL + "/Main2.png"} alt="avatar" />
                 <p id="avatar-description">Baily Martin</p>
             </div>
             <motion.div className="overlay-content-div" initial={{x:"-90vw"}} whileInView={{x:0}} transition={{type:"spring", duration:2, bounce:0.3}}>
