@@ -69,6 +69,16 @@ function ProjectTiles() {
                         <a href="https://bailym.github.io/TCG-DB/" target="_blank" rel="noreferrer"><button>View Live</button></a>
                     </div>
                 </motion.div>
+                <motion.div className="tile" id="tile-3" whileHover={{ scale: 1.05 }}>
+                    <div className="tile-content">
+                        <h2>Poll Tracker (React.js + Node.js + MongoDB)</h2>
+                        <img src="https://github.com/Bailym/PollTracker/blob/main/images/Home.png?raw=true" alt="Poll Tracker"></img>
+                    </div>
+                    <div className='tile-footer'>
+                        <a href="https://github.com/Bailym/PollTracker" target="_blank" rel="noreferrer"><button>View on Github</button></a>
+                        <a href="https://bailym-polltracker.herokuapp.com/" target="_blank" rel="noreferrer"><button>View Live</button></a>
+                    </div>
+                </motion.div>
             </div>
         </div>
     )
