@@ -7,9 +7,7 @@ import ProjectTiles from "../../components/ProjectTiles/ProjectTiles";
 
 function App() {
 
-  const [isMobile, setMobile] = useState(window.innerWidth < 641);
-  //const [isTablet, setTablet] = useState(window.innerWidth < 1007 && window.innerWidth > 640);
-  //const [isDesktop, setDesktop] = useState(window.innerWidth > 1006);
+  const [isMobile, setMobile] = useState(window.innerWidth < 641);;
     
     //work out what type of screen we are on
     function updateMedia () {
@@ -21,7 +19,6 @@ function App() {
         window.addEventListener("resize", updateMedia);
         return () => window.removeEventListener("resize", updateMedia);
       });
-
 
   return (
     <div className="app-container-div">

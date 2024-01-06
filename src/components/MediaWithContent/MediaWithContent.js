@@ -20,15 +20,15 @@ function MediaWithContent() {
             <motion.div className="media-div">
                 <motion.div className="title-div">
                     <motion.h1>Baily Martin</motion.h1>
-                    <motion.h2 custom={0} animate={controls}>React.js</motion.h2>
-                    <motion.h2 custom={1} animate={controls}>Antd - MUI - Bootstrap</motion.h2>
-                    <motion.h2 custom={2} animate={controls}>Node.js</motion.h2>
-                    <motion.h2 custom={3} animate={controls}>Express.js</motion.h2>
-                    <motion.h2 custom={4} animate={controls}>AWS EC2</motion.h2>
-                    <motion.h2 custom={5} animate={controls}>MySQL</motion.h2>
-                    <motion.h2 custom={6} animate={controls}>Unity</motion.h2>
-                    <motion.h2 custom={7} animate={controls}>UI/UX Design</motion.h2>
-                    <motion.h2 custom={8} animate={controls}>WordPress CMS</motion.h2>
+                    <motion.h2 custom={0} animate={controls}>HTML + CSS</motion.h2>
+                    <motion.h2 custom={1} animate={controls}>React.js</motion.h2>
+                    <motion.h2 custom={2} animate={controls}>Node.js + Express.js</motion.h2>
+                    <motion.h2 custom={3} animate={controls}>MySQL + MongoDB</motion.h2>
+                    <motion.h2 custom={4} animate={controls}>C/C++</motion.h2>
+                    <motion.h2 custom={5} animate={controls}>Embedded Programming + Electronics</motion.h2>
+                    <motion.h2 custom={6} animate={controls}>Unity 2D</motion.h2>
+                    <motion.h2 custom={7} animate={controls}>AWS</motion.h2>
+                    <motion.h2 custom={8} animate={controls}>UI/UX Design</motion.h2>
                 </motion.div>
             </motion.div>
                 <motion.div className="content-div" animate={{ x: ["100vw", "0vw"] }}>
