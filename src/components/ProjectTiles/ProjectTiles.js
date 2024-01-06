@@ -43,7 +43,7 @@ function ProjectTiles() {
                     </div>
                 </motion.div>
 
-                <motion.div className="tile" id="tile-3" whileHover={{ scale: 1.05 }}>
+                <motion.div className="tile" id="tile-4" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
                         <h2>Poll Tracker (React.js + Node.js + MongoDB)</h2>
                         <img src="https://github.com/Bailym/PollTracker/blob/main/images/Home.png?raw=true" alt="Poll Tracker"></img>
@@ -54,7 +54,7 @@ function ProjectTiles() {
                     </div>
                 </motion.div>
 
-                <motion.div className="tile" id="tile-3" whileHover={{ scale: 1.05 }}>
+                <motion.div className="tile" id="tile-5" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
                         <h2>TCG-DB (React.js)</h2>
                         <img src="https://github.com/Bailym/TCG-DB/blob/main/images/Base%20.png?raw=true" alt="tcg-db"></img>
@@ -65,7 +65,7 @@ function ProjectTiles() {
                     </div>
                 </motion.div>
 
-                <motion.div className="tile" id="tile-2" whileHover={{ scale: 1.05 }}>
+                <motion.div className="tile" id="tile-6" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
                         <h2>GalaxyRun (Unity 2D)</h2>
                         <img src="https://github.com/Bailym/GalaxyRun/blob/main/images/Gameplay.gif?raw=true" alt="GalxyRun"></img>
@@ -77,14 +77,23 @@ function ProjectTiles() {
                     </div>
                 </motion.div>
 
-                <motion.div className="tile" id="tile-5" whileHover={{ scale: 1.05 }}>
+                <motion.div className="tile" id="tile-7" whileHover={{ scale: 1.05 }}>
                     <div className="tile-content">
-                        <h2>Plant Care App (React.js + Node.js + MySQL)</h2>
-                        <img src="https://github.com/Bailym/PlantCareApp/blob/master/images/Poster.jpg?raw=true" alt="PlantCareApp"></img>
+                        <h2>Pi Pico 1602 LCD Driver (C + Pi Pico)</h2>
+                        <img src="https://github.com/Bailym/pico-i2c-1602-lcd/blob/main/examples/still%20image.png?raw=true" alt="Pi Pico 1602 LCD Driver"></img>
                     </div>
                     <div className='tile-footer'>
-                        <a href="https://github.com/Bailym/PlantCareApp" target="_blank" rel="noreferrer"><button>View on Github</button></a>
-                        <a href="https://bailym-plantcareapp.herokuapp.com/" target="_blank" rel="noreferrer"><button>View Live</button></a>
+                        <a href="https://github.com/Bailym/pico-i2c-1602-lcd" target="_blank" rel="noreferrer"><button>View on Github</button></a>
+                    </div>
+                </motion.div>
+
+                <motion.div className="tile" id="tile-8" whileHover={{ scale: 1.05 }}>
+                    <div className="tile-content">
+                        <h2>Pi Pico KY-040 Rotary Encoder Driver (C + Pi Pico)</h2>
+                        <img src="https://github.com/Bailym/pico-ky-040/blob/main/images/USB%20serial%20out.png?raw=true" alt="Pi Pico KY-040 Rotary Encoder Driver"></img>
+                    </div>
+                    <div className='tile-footer'>
+                        <a href="https://github.com/Bailym/pico-ky-040" target="_blank" rel="noreferrer"><button>View on Github</button></a>
                     </div>
                 </motion.div>
             </div>
