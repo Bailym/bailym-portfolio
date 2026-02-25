@@ -1,9 +1,7 @@
 .ticker-wrap {
     background: var(--slime);
     overflow: hidden;
-    padding: 6px 0;
-    border-top: 2px solid var(--slime-dk);
-    border-bottom: 2px solid var(--slime-dk);
+    padding: 0.5rem 0;
 }
 
 .ticker {
@@ -16,7 +14,7 @@
     font-family: var(--font-pixel);
     font-size: 0.45rem;
     color: var(--dark);
-    padding: 0 40px;
+    padding: 0 5rem;
     white-space: nowrap;
 }
 

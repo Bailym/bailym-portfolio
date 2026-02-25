@@ -1,10 +1,9 @@
-/* ── HERO ── */
 .hero {
-    min-height: 90vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 32px;
+    padding: 6rem 3rem;
     position: relative;
     background:
         radial-gradient(ellipse at 20% 50%, rgba(57, 255, 20, 0.07) 0%, transparent 60%),
@@ -14,41 +13,12 @@
     text-align: center;
 }
 
-.hero-eyeball {
-    position: absolute;
-    top: 10%;
-    right: 6%;
-    width: 120px;
-    opacity: 0.55;
-    animation: eyeball-look 6s ease-in-out infinite;
-}
-
-@keyframes eyeball-look {
-
-    0%,
-    100% {
-        transform: translate(0, 0) rotate(-5deg);
-    }
-
-    25% {
-        transform: translate(6px, -4px) rotate(3deg);
-    }
-
-    50% {
-        transform: translate(-4px, 6px) rotate(-2deg);
-    }
-
-    75% {
-        transform: translate(8px, 4px) rotate(5deg);
-    }
-}
-
 .hero-pre {
     font-family: var(--font-pixel);
-    font-size: 0.45rem;
+    font-size: 0.55rem;
     color: var(--pus);
     letter-spacing: 0.15em;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     animation: blink-text 1.4s step-end infinite;
 }
 
@@ -57,13 +27,12 @@
     font-size: clamp(1rem, 3.5vw, 2.2rem);
     color: var(--slime);
     text-shadow: var(--glow);
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     line-height: 1.6;
     position: relative;
     display: inline-block;
 }
 
-/* Glitch */
 .glitch::before,
 .glitch::after {
     content: attr(data-text);
@@ -157,13 +126,13 @@
 .hero-role {
     font-size: 1rem;
     color: var(--text-dim);
-    margin-bottom: 36px;
+    margin-bottom: 1.5rem;
     letter-spacing: 0.08em;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }

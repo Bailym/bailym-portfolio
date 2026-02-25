@@ -1,7 +1,7 @@
 .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -11,11 +11,10 @@
 
 .code-line {
     font-size: 0.95rem;
-    line-height: 1.9;
 }
 
 .code-indent {
-    padding-left: 24px;
+    padding-left: 2rem;
 }
 
 .code-key {
@@ -29,16 +28,16 @@
 .skills-bubbles {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1rem;
     align-content: flex-start;
 }
 
 .skill-bubble {
     font-family: var(--font-pixel);
-    font-size: 0.36rem;
+    font-size: 0.5rem;
     color: var(--slime);
     border: 1px solid var(--slime-dk);
-    padding: 8px 12px;
+    padding: 0.5rem 1rem;
     display: inline-block;
     transition: background 0.15s, box-shadow 0.15s;
     cursor: default;

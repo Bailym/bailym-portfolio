@@ -2,7 +2,7 @@
     font-family: var(--font-pixel);
     font-size: 0.43rem;
     color: var(--pus);
-    margin-bottom: 32px;
+    margin-bottom: 3rem;
     line-height: 2;
     letter-spacing: 0.06em;
 }
@@ -10,13 +10,13 @@
 .contact-links {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.5rem;
 }
 
 .contact-link {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
     color: var(--text);
     text-decoration: none;
     font-size: 0.95rem;

@@ -1,7 +1,7 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .project-card {
@@ -9,24 +9,7 @@
     color: var(--text);
     display: flex;
     flex-direction: column;
-    gap: 12px;
-}
-
-.card-slime {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--slime), transparent);
-    opacity: 0;
-    transform: scaleX(0.3);
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-.project-card:hover .card-slime {
-    opacity: 1;
-    transform: scaleX(1);
+    gap: 0.75rem;
 }
 
 .project-number {
@@ -68,28 +51,28 @@
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .tech-tag {
     font-family: var(--font-pixel);
-    font-size: 0.33rem;
+    font-size: 0.5rem;
     color: var(--dark);
     background: var(--slime-dk);
-    padding: 4px 8px;
+    padding: 0.2rem 0.5rem;
     border: 1px solid var(--slime);
 }
 
 .project-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 4px;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
 }
 
 .project-link-btn {
     font-family: var(--font-pixel);
-    font-size: 0.34rem;
+    font-size: 0.4rem;
     color: var(--hot-pink);
     text-decoration: none;
     letter-spacing: 0.08em;

@@ -1,27 +1,27 @@
 .about-grid {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 32px;
+    gap: 3rem;
     align-items: start;
 }
 
 .body-text {
-    margin-bottom: 16px;
+    margin-bottom: 2rem;
     font-size: 1rem;
 }
 
 .stat-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 24px;
-    padding-top: 20px;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
     border-top: 1px solid var(--slime-dk);
 }
 
 .stat {
     font-family: var(--font-pixel);
-    font-size: 0.38rem;
+    font-size: 0.5rem;
     color: var(--pus);
 }
 
@@ -29,9 +29,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
-    min-width: 150px;
-    padding: 16px;
+    gap: 1rem;
+    min-width: 8rem;
+    padding: 1.5rem;
 }
 
 .spinning-skull {

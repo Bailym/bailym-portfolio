@@ -1,7 +1,14 @@
 ---
 import "./projects.css";
 
-const projects = [
+type Project = {
+  title: string;
+  tech: string[];
+  image: string;
+  links: { label: string; url: string }[];
+}
+
+const projects: Project[] = [
   {
     title: "Extra Armor",
     tech: ["Java", "Minecraft Forge API"],
@@ -120,7 +127,7 @@ const projects = [
                             </a>
                         ))}
                     </div>
-                    <div class="card-slime" aria-hidden="true" />
+
                 </div>
             ))
         }
