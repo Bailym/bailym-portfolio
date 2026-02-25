@@ -1,0 +1,91 @@
+---
+import "./winamp.css";
+---
+
+<div class="winamp">
+    <div class="winamp-titlebar">
+        <span class="winamp-title">WINAMP</span>
+        <div class="winamp-window-btns">
+            <span>─</span>
+            <span>□</span>
+            <span>×</span>
+        </div>
+    </div>
+    <div class="winamp-display">
+        <div class="winamp-track-wrap">
+            <span class="winamp-track" id="wp-track">PAPERCUT — LINKIN PARK</span>
+        </div>
+        <div class="winamp-meta">
+            <span class="winamp-time" id="wp-time">0:00</span>
+            <span class="winamp-info">128KBPS · 44KHZ</span>
+        </div>
+    </div>
+    <div class="winamp-viz">
+        {Array.from({length: 12}).map((_, i) => (
+            <div class="viz-bar" style={`--i: ${i}`}></div>
+        ))}
+    </div>
+    <div class="winamp-seek">
+        <div class="winamp-seek-fill" id="wp-seek"></div>
+    </div>
+    <div class="winamp-buttons">
+        <button class="wp-btn" id="wp-prev">⏮</button>
+        <button class="wp-btn" id="wp-rew">⏪</button>
+        <button class="wp-btn wp-play" id="wp-play">▶</button>
+        <button class="wp-btn" id="wp-fwd">⏩</button>
+        <button class="wp-btn" id="wp-next">⏭</button>
+    </div>
+</div>
+
+<script>
+  const tracks = [
+    { title: "PAPERCUT",                      artist: "LINKIN PARK",      duration: 20 },
+    { title: "STUCK",                          artist: "LIMP BIZKIT",      duration: 16 },
+    { title: "FREAK ON A LEASH",              artist: "KORN",             duration: 24 },
+    { title: "CRAWLING",                       artist: "LINKIN PARK",      duration: 20 },
+    { title: "CHOP SUEY!",                     artist: "SYSTEM OF A DOWN", duration: 21 },
+    { title: "ONE STEP CLOSER",               artist: "LINKIN PARK",      duration: 18 },
+    { title: "BE QUIET AND DRIVE (FAR AWAY)", artist: "DEFTONES",         duration: 27 },
+  ];
+
+  let trackIndex = 0;
+  let elapsed = 0;
+  let playing = true;
+
+  const trackEl = document.getElementById('wp-track');
+  const timeEl  = document.getElementById('wp-time');
+  const seekEl  = document.getElementById('wp-seek');
+  const playBtn = document.getElementById('wp-play');
+  const prevBtn = document.getElementById('wp-prev');
+  const nextBtn = document.getElementById('wp-next');
+
+  function fmt(s: number) {
+    return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+  }
+
+  function loadTrack(i: number) {
+    trackIndex = (i + tracks.length) % tracks.length;
+    elapsed = 0;
+    const t = tracks[trackIndex];
+    if (trackEl) trackEl.textContent = `${t.title} \u2014 ${t.artist}`;
+  }
+
+  function tick() {
+    if (!playing) return;
+    const t = tracks[trackIndex];
+    elapsed = (elapsed + 1) % (t.duration + 1);
+    if (elapsed === t.duration) loadTrack(trackIndex + 1);
+    if (timeEl) timeEl.textContent = fmt(elapsed);
+    if (seekEl) (seekEl as HTMLElement).style.width = `${(elapsed / t.duration) * 100}%`;
+  }
+
+  playBtn?.addEventListener('click', () => {
+    playing = !playing;
+    if (playBtn) playBtn.textContent = playing ? '⏸' : '▶';
+  });
+  prevBtn?.addEventListener('click', () => loadTrack(trackIndex - 1));
+  nextBtn?.addEventListener('click', () => loadTrack(trackIndex + 1));
+
+  loadTrack(0);
+  setInterval(tick, 1000);
+</script>
