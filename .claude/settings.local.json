@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd C:\\\\Users\\\\Baily\\\\Desktop\\\\Repos\\\\Personal Projects\\\\bailym-portfolio:*)",
+      "mcp__plugin_serena_serena__list_dir"
+    ]
+  }
+}
