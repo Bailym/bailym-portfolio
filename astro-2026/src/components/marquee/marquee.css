@@ -1,0 +1,31 @@
+.ticker-wrap {
+    background: var(--slime);
+    overflow: hidden;
+    padding: 6px 0;
+    border-top: 2px solid var(--slime-dk);
+    border-bottom: 2px solid var(--slime-dk);
+}
+
+.ticker {
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 22s linear infinite;
+}
+
+.ticker span {
+    font-family: var(--font-pixel);
+    font-size: 0.45rem;
+    color: var(--dark);
+    padding: 0 40px;
+    white-space: nowrap;
+}
+
+@keyframes ticker-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

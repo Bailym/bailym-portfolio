@@ -1,0 +1,35 @@
+---
+import "./skills.css";
+
+const skills = [
+  "HTML + CSS", "React.js", "Node.js", "Express.js",
+  "MySQL", "MongoDB", "C/C++", "Embedded Systems",
+  "Unity 2D", "AWS", "UI/UX Design",
+];
+
+---
+<section id="skills" class="section">
+    <div class="section-header">
+        <h2>
+            <span class="pixel-bracket">[</span> SKILLS.json <span
+                class="pixel-bracket">]</span>
+        </h2>
+    </div>
+    <div class="skills-container">
+        <div class="skills-code card">
+            <p class="code-line"><span class="code-key">"skills"</span>: [</p>
+            {
+                skills.map((skill, i) => (
+                    <p class="code-line code-indent">
+                        <span class="code-string">"{skill}"</span>
+                        {i < skills.length - 1 ? "," : ""}
+                    </p>
+                ))
+            }
+            <p class="code-line">]</p>
+        </div>
+        <div class="skills-bubbles">
+            {skills.map((skill) => <span class="skill-bubble">{skill}</span>)}
+        </div>
+    </div>
+</section>

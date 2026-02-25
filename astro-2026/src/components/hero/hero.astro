@@ -1,0 +1,27 @@
+---
+import "./hero.css";
+import { links, name } from "../../constants";
+
+const role = "full-stack developer / digital creature";
+---
+<section class="hero" id="top">
+    <div class="hero-content">
+        <p class="hero-pre">&#x26A0; ENTERING THE ZONE &#x26A0;</p>
+        <h1 class="hero-name glitch" data-text={name}>
+            {name}<span class="blink">_</span>
+        </h1>
+        <p class="hero-role">{role}</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">VIEW WORK</a>
+            <a
+                href="/CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary">DOWNLOAD CV</a
+            >
+            <a href={`mailto:${links.email}`} class="btn btn-secondary"
+                >EMAIL ME</a
+            >
+        </div>
+    </div>
+</section>

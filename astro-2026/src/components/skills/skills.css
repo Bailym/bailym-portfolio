@@ -1,0 +1,72 @@
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.skills-code {
+    font-family: var(--font-mono);
+}
+
+.code-line {
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+.code-indent {
+    padding-left: 24px;
+}
+
+.code-key {
+    color: var(--hot-pink);
+}
+
+.code-string {
+    color: var(--pus);
+}
+
+.skills-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: flex-start;
+}
+
+.skill-bubble {
+    font-family: var(--font-pixel);
+    font-size: 0.36rem;
+    color: var(--slime);
+    border: 1px solid var(--slime-dk);
+    padding: 8px 12px;
+    display: inline-block;
+    transition: background 0.15s, box-shadow 0.15s;
+    cursor: default;
+    animation: bubble-float 4s ease-in-out infinite;
+}
+
+.skill-bubble:nth-child(odd) {
+    animation-duration: 3.5s;
+}
+
+.skill-bubble:nth-child(3n) {
+    animation-duration: 5s;
+}
+
+.skill-bubble:hover {
+    background: var(--slime);
+    color: var(--dark);
+    box-shadow: var(--glow);
+}
+
+@keyframes bubble-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}

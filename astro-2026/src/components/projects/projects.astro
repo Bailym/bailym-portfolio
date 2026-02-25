@@ -1,0 +1,128 @@
+---
+import "./projects.css";
+
+const projects = [
+  {
+    title: "Extra Armor",
+    tech: ["Java", "Minecraft Forge API"],
+    image: "https://i.imgur.com/N003tfh.gif",
+    links: [
+      { label: "View on CurseForge", url: "https://www.curseforge.com/minecraft/mc-mods/extra-armor" },
+    ],
+  },
+  {
+    title: "Binary Bingo",
+    tech: ["React.js"],
+    image: "https://github.com/Bailym/BinaryBingo/raw/main/images/BinaryBingo%205.png",
+    links: [
+      { label: "GitHub", url: "https://github.com/Bailym/BinaryBingo/" },
+      { label: "View Live", url: "https://bailym.github.io/BinaryBingo/" },
+    ],
+  },
+  {
+    title: "Clone Hero USB Gamepad",
+    tech: ["Arduino", "C++"],
+    image: "https://github.com/Bailym/CloneHeroUSBController/blob/main/images/8.jpg?raw=true",
+    links: [
+      { label: "GitHub", url: "https://github.com/Bailym/CloneHeroUSBController" },
+    ],
+  },
+  {
+    title: "Poll Tracker",
+    tech: ["React.js", "Node.js", "MongoDB"],
+    image: "https://github.com/Bailym/PollTracker/blob/main/images/Home.png?raw=true",
+    links: [
+      { label: "GitHub", url: "https://github.com/Bailym/PollTracker" },
+      { label: "View Live", url: "https://bailym-polltracker.herokuapp.com/" },
+    ],
+  },
+  {
+    title: "Pi Pico 1602 LCD Driver",
+    tech: ["C", "Raspberry Pi Pico"],
+    image: "https://github.com/Bailym/pico-i2c-1602-lcd/blob/main/examples/still%20image.png?raw=true",
+    links: [
+      { label: "GitHub", url: "https://github.com/Bailym/pico-i2c-1602-lcd" },
+    ],
+  },
+  {
+    title: "Pi Pico KY-040 Rotary Encoder Driver",
+    tech: ["C", "Raspberry Pi Pico"],
+    image: "https://github.com/Bailym/pico-ky-040/blob/main/images/USB%20serial%20out.png?raw=true",
+    links: [
+      { label: "GitHub", url: "https://github.com/Bailym/pico-ky-040" },
+    ],
+  },
+  {
+    title: "ElixirMix",
+    tech: ["Unity 2D", "C#"],
+    image: "https://github.com/Bailym/Bluefruit-GameJam-2023/blob/main/images/Mixing.png?raw=true",
+    links: [
+      { label: "GitHub", url: "https://github.com/Bailym/Bluefruit-GameJam-2023" },
+      { label: "Download", url: "https://github.com/Bailym/Bluefruit-GameJam-2023/releases/tag/v0.0.0" },
+    ],
+  },
+  {
+    title: "TCG-DB",
+    tech: ["React.js"],
+    image: "https://github.com/Bailym/TCG-DB/blob/main/images/Base%20.png?raw=true",
+    links: [
+      { label: "GitHub", url: "https://github.com/Bailym/TCG-DB" },
+      { label: "View Live", url: "https://bailym.github.io/TCG-DB/" },
+    ],
+  },
+  {
+    title: "GalaxyRun",
+    tech: ["Unity 2D", "C#"],
+    image: "https://github.com/Bailym/GalaxyRun/blob/main/images/Gameplay.gif?raw=true",
+    links: [
+      { label: "GitHub", url: "https://github.com/Bailym/GalaxyRun" },
+      { label: "Download", url: "https://github.com/Bailym/GalaxyRun/releases/download/v0.0.2/GalaxyRun.01-08-22.zip" },
+    ],
+  },
+];
+---
+
+<section id="projects" class="section section-dark">
+    <div class="section-header">
+        <h2>
+            <span class="pixel-bracket">[</span> PROJECTS <span
+                class="pixel-bracket">]</span>
+        </h2>
+    </div>
+    <div class="projects-grid">
+        {
+            projects.map((project, i) => (
+                <div class="project-card card">
+                    <div class="project-number">0{i + 1}</div>
+                    <h3 class="project-title">{project.title}</h3>
+                    <div class="project-img-wrap">
+                        <img
+                            src={project.image}
+                            alt={project.title}
+                            class="project-img"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="project-tech">
+                        {project.tech.map((t) => (
+                            <span class="tech-tag">{t}</span>
+                        ))}
+                    </div>
+                    <div class="project-links">
+                        {project.links.map((l) => (
+                            <a
+                                href={l.url}
+                                class="project-link-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {l.label} &gt;&gt;
+                            </a>
+                        ))}
+                    </div>
+                    <div class="card-slime" aria-hidden="true" />
+                </div>
+            ))
+        }
+    </div>
+</section>
